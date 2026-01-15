@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Crunch Co</title>
+
+    <link rel="stylesheet" href="styles.css">
+
+       
+
+</head>
+
+   <body>
+
+<nav class="navbar">
+
+<div class="navbar__container">
+
+   <a href="\" id="navbar__logo"><b>Crunch</b></a>
+
+
+   <div class="navbar__toggle" id="mobile-menu">
+   </div>
+
+<ul class="navbar__menu">
+
+    <li class="navbar__items">
+
+        <a href="#home" class="navbar__links">Home</a>
+
+    </li>
+
+    <li class="navbar__items">
+
+        <a href="#benefits" class="navbar__links">Benefits</a>
+
+    </li>
+
+<li class="navbar__items">
+
+        <a href="#products" class="navbar__links">Products</a>
+
+</li>
+
+</ul>
+
+
+
+ <button class="cart__btn__nav" onclick="toggleCart()">
+
+                        Cart <span class="cart__count__badge" id="cart__count">0</span>
+
+                    </button>
+
+</div>
+   </nav>
+
+
+
+<!---main--->
+<div class="content-wrapper">
+<section id="home" class="main">
+
+    <div class="main__container">
+
+<div class="main__content">
+
+<h1> WELCOME</h1>
+
+<h2> TO</h2>
+
+<h3>CRUNCH CO SHOP</h3>
+
+<a href="#products" class="main__btn">Shop now</a>
+
+</div>
+
+
+
+<div class="main__img--container">
+
+    <img src ="./images/mainimg.png" alt="product_main_picture" id="main__img">
+
+</div>
+
+    </div>
+
+</div>
+
+
+
+<!---products--->
+
+<section id="products" class="products">
+
+
+
+<h1>Our Products</h1>
+
+
+
+<div class="product__container">
+
+
+
+<div class="products__card">
+
+
+
+<img src="./images/Cheese.png" alt="Cheese_flavor" class="img__1">
+
+
+
+<h2>Banana Chips: Cheese</h2>
+
+
+
+<p>₱25.00</p>
+
+
+
+<button onclick="AddToCart('Banana Chips: Cheese', 25.00)">Add to Cart</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="products__card">
+
+
+
+<img src="./images/barbeque.png" alt="Barbeque_flavor" class="img__1">
+
+
+
+<h2>Banana Chips: Barbeque</h2>
+
+
+
+<p>₱25.00</p>
+
+
+
+<button onclick="AddToCart('Banana Chips: Barbeque', 25.00)">Add to Cart</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="products__card">
+
+
+
+<img src="./images/ChilliBarbeque.png" alt="Chilli_Barbeque_flavor" class="img__1">
+
+
+
+<h2>Banana Chips: Chilli Barbeque</h2>
+
+
+
+<p>₱25.00</p>
+
+
+
+<button onclick="AddToCart('Banana Chips: Chilli Barbeque', 25.00)">Add to Cart</button>
+
+
+
+</div>
+
+
+
+
+
+
+
+<div class="products__card">
+
+
+
+<img src="./images/Sourcream.png" alt="Sourcream_flavor" class="img__1">
+
+
+
+<h2>Banana Chips:Sourcream</h2>
+
+
+
+<p>₱25.00</p>
+
+
+
+<button onclick="AddToCart('Banana Chips: Sourcream', 25.00)">Add to Cart</button>
+
+
+
+</div>
+
+
+
+</div>
+
+
+
+</div>
+
+
+    <!---benefits-->
+<section id="benefits" class="health">
+    <h1>Benefits</h1>
+            <div class="health__grid">
+
+            <div class="health__card">
+
+          <h2>1. High Fiber Content</h2>
+
+          <p>Banana chips are an excellent source of dietary fiber. A single serving can provide roughly 5-8% of your daily recommended intake. Fiber is essential for:</p>
+
+ <ul>
+
+    <li><strong>Health:</strong> Promoting regular bowel movements.</li>
+
+    <li><strong>Satiety:</strong> Helping you feel full longer, which can prevent overeating.</li>
+
+ </ul>
+
+          </a>
+
+        </div>
+
+        <div class="health__card">
+
+            <h2>2. Rich Source of Potassium</h2>
+
+            <p>Just like fresh bananas, the dried version is packed with potassium. This vital mineral is a powerful electrolyte that supports:</p>
+
+ <ul>
+
+    <li><strong>Heart Health:</strong> Helping to regulate blood pressure and counteracting the effects of sodium.</li>
+
+    <li><strong>Muscle Function:</strong> Preventing cramps and supporting muscle contraction during exercise.</li>
+
+ </ul>
+
+            </a>
+
+        </div>
+
+      <div class="health__card">
+
+        <h2>3. Quick Energy Boost</h2>
+
+        <p>Banana chips are calorically dense and contain natural sugars (and sometimes added honey/cane sugar), they serve as an efficient fuel source. They are ideal for:</p>
+
+ <ul>
+
+    <li><strong>Post-Workout Recovery:</strong> Replenishing glycogen stores quickly.</li>
+
+    <li><strong>Hiking/Active Snacks:</strong> Providing long-lasting energy in a lightweight, portable form.</li>
+
+ </ul>
+
+        </a>
+
+      </div>
+
+      <div class="health__card">
+
+        <h2>4. Essential Vitamins and Minerals</h2>
+
+<ul>
+
+    <li><strong>Magnesium:</strong> Supports bone health and brain function.</li>
+
+<li><strong>Vitamin B6:</strong> Vital for brain development and keeping the nervous and immune systems healthy.</li>
+
+<li><strong>Iron:</strong> Helps in the production of hemoglobin, preventing fatigue.</li>
+
+</ul>  
+
+    </div>
+
+    <div class="note">
+
+<strong>Note:</strong> To maximize health benefits, it is recommended to choose chips that are vacuum-fried or baked rather than deep-fried in saturated oils.
+
+   </div>
+
+</section>
+        </div>
+
+<div class="cart__drawer" id="cart__drawer">
+
+    <div class="cart__head">
+
+        <h2>Your Cart</h2>
+
+        <span class="close-cart" onclick="toggleCart()">&times;</span>
+
+    </div>
+
+    <div class="cart__items" id="cart__items-lists">
+
+        <p style ="text-align:center; color:#fff; margin-top:20px;">Your cart is empty</p>
+
+    </div>
+
+    <div class="cart__footer">
+
+        <div class="total__price">
+
+            <span>Total:</span>
+
+            <span id="total-price">₱0.00</span>
+
+        </div>
+
+        <button class ="order__btn" onclick="placeOrder()">Order Now</button>
+
+</div>
+
+    </div>
+
+
+
+
+
+
+
+
+<!---footer--->
+
+<footer class="footer__container">
+
+    <div class="footer_items">
+
+    <div class="footer__links">
+
+        <div class="footer__link--wrapper">
+
+            <div class="footer__link--items">
+
+              <h2>About Us</h2>
+
+              <a href = "https://share.google/HkvO6Swy1zCzT2vqA">How its made?</a>
+
+            </div>    
+
+        </div>
+
+         <div class="footer__link--wrapper">
+
+            <div class="footer__link--items">
+
+              <h2>Contact Us</h2>
+
+              <a href ="./images/contact.png">Our Service Number</a>
+
+            </div>
+            </div>
+
+             <div class="footer__link--wrapper">
+
+                <div class="footer__link--items">
+
+              <h2>Social Media</h2>
+
+              <a href ="https://www.instagram.com/crunch.coo?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==">Instagram</a>
+
+             </div>
+
+         </div>
+
+         
+             <div class="footer__link--wrapper">
+
+                <div class="footer__link--items">
+
+              <h2> Help </h2>
+
+              <a href ="https://accounts.google.com/SignOutOptions?hl=fil&continue=https://www.google.com/search%3Fq%3Dhelp%2Bwhen%2Bthe%2Bwebite%2Bgot%2Bproblem%26oq%3Dhelp%2Bwhen%2Bthe%2Bwebite%2Bgot%2Bproblem%26gs_lcrp%3DEgZjaHJvbWUyBggAEEUYOTIGCAEQLhhA0gEJMjA4NTdqMGoxqAIAsAIA%26sourceid%3Dchrome%26ie%3DUTF-8&ec=futura_srp_og_si_72236_p">Email</a>
+
+             </div>
+
+         </div>
+
+         </div>
+
+            </div>
+
+
+<div class="footer__bottom">
+            <p>&copy; 2025 Crunch co. All Rights Reserved.</p>
+</div>
+    </footer>
+
+</div>
+
+<script src="app.js"></script>
+
+</body>
+
+</html> 
